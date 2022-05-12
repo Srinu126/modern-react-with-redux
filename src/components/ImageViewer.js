@@ -3,7 +3,7 @@ import unsplash from '../api/unsplash';
 import SearchBar from './SearchBar';
 import ImageList from './ImageList';
 
-class App extends React.Component {
+class ImageViewer extends React.Component {
     state = { searchKey: '', apiResponse: [] }
     handleSearchKey = async (value) => {
         this.setState({ searchKey: value })
@@ -23,4 +23,4 @@ class App extends React.Component {
     }
 }
 
-export default App;
+export default ImageViewer;

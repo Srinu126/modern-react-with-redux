@@ -3,7 +3,7 @@ import SearchBar from './SearchBar';
 import youtube from '../api/youtube';
 import VideoList from './VideoList';
 import VideoDetail from './VideoDetail';
-class App extends React.Component {
+class VideoViewer extends React.Component {
     componentDidMount() {
         this.handleSearchValue('Best books')
     }
@@ -38,4 +38,4 @@ class App extends React.Component {
     }
 }
 
-export default App;
+export default VideoViewer;

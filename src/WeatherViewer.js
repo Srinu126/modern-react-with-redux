@@ -1,9 +1,8 @@
 import React from 'react';
-import { createRoot } from 'react-dom/client';
 import SeasonCard from './components/SeasonCard';
 import Spinner from './components/Spinner';
 
-class App extends React.Component {
+class WeatherViewer extends React.Component {
     constructor(props) {
         super(props);
         this.state = { lat: null, errorMessage: '' }
@@ -35,7 +34,4 @@ class App extends React.Component {
         )
     }
 }
-
-const container = document.getElementById('root');
-const root = createRoot(container);
-root.render(<App />);
+export default WeatherViewer;

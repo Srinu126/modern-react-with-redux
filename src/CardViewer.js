@@ -1,8 +1,7 @@
 import React from 'react';
-import {createRoot} from 'react-dom/client';
 import CommentDetail from './components/CommentDetail';
 import ApprovalCard from './components/ApprovalCard';
-const App = () => {
+const CardViewer = () => {
     return(
         <>
         <ApprovalCard><CommentDetail author="John" comment="Nice Job"/></ApprovalCard>
@@ -16,6 +15,4 @@ const App = () => {
         
     )
 }
-const container = document.getElementById('root')
-const root = createRoot(container)
-root.render(<App/>)
+export default CardViewer;
